@@ -12,3 +12,22 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
+
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'css')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'img')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'js')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'vendor', 'bootstrap', 'css')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'vendor', 'bootstrap', 'js')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'vendor', 'font-awesome', 'css')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'vendor', 'font-awesome', 'fonts')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'vendor', 'font-awesome', 'less')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'vendor', 'font-awesome', 'scss')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'vendor', 'jquery')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'vendor', 'jquery-easing')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'vendor', 'simple-line-icons', 'css')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'vendor', 'simple-line-icons', 'fonts')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'vendor', 'simple-line-icons', 'less')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'vendor', 'simple-line-icons', 'scss')
+
+Rails.application.config.assets.precompile += %w( *.jpg *.png *.svg)
+Rails.application.config.assets.precompile += %w( *.eot *.woff *.ttf *.woff2)
